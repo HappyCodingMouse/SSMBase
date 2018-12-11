@@ -6,13 +6,13 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface StudentMapper {
-    int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(@Param("id") Integer id);
 
     int insert(Student record);
 
     int insertSelective(Student record);
 
-    Student selectByPrimaryKey(Integer id);
+    Student selectByPrimaryKey(@Param("id") Integer id);
 
     int updateByPrimaryKeySelective(Student record);
 

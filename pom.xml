@@ -14,21 +14,21 @@
     <parent>
         <groupId>com.ssm.base</groupId>
         <artifactId>SSMBasePom</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <properties>
         <mybatis-generator.version>1.3.4</mybatis-generator.version>
     </properties>
 
-    <!--<profiles>-->
-        <!--<profile>-->
-            <!--<id>dev</id>-->
-        <!--</profile>-->
-        <!--<profile>-->
-            <!--<id>prd</id>-->
-        <!--</profile>-->
-    <!--</profiles>-->
+    <profiles>
+        <profile>
+            <id>dev</id>
+        </profile>
+        <profile>
+            <id>prd</id>
+        </profile>
+    </profiles>
 
     <build>
         <finalName>${project.artifactId}</finalName>
